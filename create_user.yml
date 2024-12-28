@@ -1,0 +1,11 @@
+---
+- name: my test playbook
+  hosts: all
+  become: yes
+  tasks:
+    - name: create a user sai
+      user:
+        name: sai
+        state: present
+
+
